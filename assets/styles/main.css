@@ -1,0 +1,5 @@
+@import "../icomoon/style.css";
+@import "../fonts/_fonts.css";
+@import "./tailwind.css";
+@import "_transitions.css";
+@import "_global.css";

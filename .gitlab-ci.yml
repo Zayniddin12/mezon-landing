@@ -1,0 +1,26 @@
+before_script:
+  - docker login $CI_REGISTRY --username $CI_REGISTRY_USER --password $CI_REGISTRY_PASSWORD
+
+stages:
+  - build_image
+  - deploy_image
+
+build_image_prod:
+  stage: build_image
+  image: registry.uicgroup.tech/devops/docker:dind
+  script:
+    - make vars-input
+    - make build-image TAG=$CI_PIPELINE_IID SERVICE_NAME=$CI_PROJECT_NAME PROJECT_NAME=$CI_PROJECT_NAMESPACE REGISTRY=$CI_REGISTRY ENV_TAG=latest
+    - make push-image TAG=$CI_PIPELINE_IID SERVICE_NAME=$CI_PROJECT_NAME PROJECT_NAME=$CI_PROJECT_NAMESPACE REGISTRY=$CI_REGISTRY ENV_TAG=latest
+  only:
+    - master
+
+deploy:
+  stage: deploy_image
+  script:
+    - docker rm -f mezon-frontend
+    - docker run --name mezon-frontend -d -p 18700:3000 --restart always registry.uicgroup.tech/a.xamroyev/mezon-front-landing:$CI_PIPELINE_IID
+  only:
+    - master
+  tags: 
+    - 77uz

@@ -1,0 +1,90 @@
+/* Proxima Nova A */
+@font-face {
+  font-family: Proxima Nova A;
+  font-weight: 300;
+  src: url("~/assets/fonts/proxima-nova-a/Proxima Nova A Light.woff"),
+    url("~/assets/fonts/proxima-nova-a/Proxima Nova A Light.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Proxima Nova A;
+  font-weight: 400;
+  src: url("~/assets/fonts/proxima-nova-a/Proxima Nova A.woff"),
+    url("~/assets/fonts/proxima-nova-a/Proxima Nova A.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Proxima Nova A;
+  font-weight: 600;
+  src: url("~/assets/fonts/proxima-nova-a/Proxima Nova A Semibold.woff"),
+    url("~/assets/fonts/proxima-nova-a/Proxima Nova A Semibold.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Proxima Nova A;
+  font-weight: 700;
+  src: url("~/assets/fonts/proxima-nova-a/Proxima Nova A Bold.woff"),
+    url("~/assets/fonts/proxima-nova-a/Proxima Nova A Bold.woff2");
+  font-display: swap;
+}
+
+/* Proxima Nova */
+@font-face {
+  font-family: Proxima Nova;
+  font-weight: 300;
+  src: url("~/assets/fonts/proxima-nova/Proxima Nova Light.woff"),
+    url("~/assets/fonts/proxima-nova/Proxima Nova Light.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Proxima Nova;
+  font-weight: 400;
+  src: url("~/assets/fonts/proxima-nova/Proxima Nova.woff"),
+    url("~/assets/fonts/proxima-nova/Proxima Nova.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Proxima Nova;
+  font-weight: 500;
+  src: url("~/assets/fonts/proxima-nova/Proxima Nova Medium.woff"),
+    url("~/assets/fonts/proxima-nova/Proxima Nova Medium.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Proxima Nova;
+  font-weight: 600;
+  src: url("~/assets/fonts/proxima-nova/Proxima Nova Semibold.woff"),
+    url("~/assets/fonts/proxima-nova/Proxima Nova Semibold.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Proxima Nova;
+  font-weight: 700;
+  src: url("~/assets/fonts/proxima-nova/Proxima Nova Bold.woff"),
+    url("~/assets/fonts/proxima-nova/Proxima Nova Bold.woff2");
+  font-display: swap;
+}
+
+/* Vela Sans */
+@font-face {
+  font-family: Vela Sans;
+  font-weight: 400;
+  src: url("~/assets/fonts/vela-sans/Vela Sans.woff"),
+    url("~/assets/fonts/vela-sans/Vela Sans.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vela Sans;
+  font-weight: 600;
+  src: url("~/assets/fonts/vela-sans/Vela Sans SemBd.woff"),
+    url("~/assets/fonts/vela-sans/Vela Sans SemBd.woff2");
+  font-display: swap;
+}
